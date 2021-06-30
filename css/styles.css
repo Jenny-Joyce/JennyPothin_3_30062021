@@ -1,0 +1,65 @@
+/* Général*/
+body {
+    margin: 0px;
+}
+h1, h2, h3 {
+    font-family: "Shrikhand", sans-serif;
+}
+p {
+    font-family: "Roboto", sans-serif;
+}
+/* Header/ Header img*/
+#header {
+    width: 100%;
+}
+#header img {
+    margin: 15px 60px 10px;
+}
+/* Header localisation*/
+.research {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#CFCFCF, #EEEEEE 10%);
+}
+.research i {
+    margin-left: 50px;
+}
+#location {
+    border:none;
+    background-color: #EEEEEE;
+    margin-left: 10px;
+    
+}
+#location::placeholder {
+    color: black;
+    font-family: "Roboto", sans-serif;
+    
+}
+/*Partie Header intro*/
+.intro {
+    background-color: #F6F6F6;
+    height: 280px;
+}
+.intro_title {
+    margin: 0px 30px 10px;
+    padding-top: 30px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.intro_info {
+    margin: 0px 20px 30px;
+    text-align: center;
+}
+.intro_btn {
+    display: block;
+    margin: auto;
+    padding: 15px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px #CFCFCF;
+    font-size: 16px;
+    color: #fff;
+}
