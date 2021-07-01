@@ -68,10 +68,11 @@ main {
     width: 100%;
 }
 h2 {
-    margin-left: 20px;
+    margin-left: 15px;
     font-size: 18px;
     font-weight: lighter;
 }
+
 .function_text {
     position: relative;
     margin: 30px 10px 30px 30px;
@@ -109,4 +110,68 @@ h2 {
 }
 .function_btn i:hover {
    color:#9356DC;
+}
+/*Partie restaurant*/
+#food_card {
+    background-color: #f2f2f2;
+    
+}
+#food_card h2 {
+    padding-top: 30px;
+}
+.card {
+    width: 90%;
+    height: 220px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 5px 5px 20px #E7E8E8;
+}
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    
+}
+.new {
+    border: 2px solid transparent;
+    border-radius: 2px;
+    padding: 8px;
+    color: #337D6B;
+    background-color: #99E2D0;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 25px;
+    z-index: 1;
+}
+.card_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h3 {
+   color: #000;
+    font-weight: lighter;
+    font-size: 16px;
+    margin: 5px 0px 0px 10px;
+}
+h4 {
+    color: #000;
+     font-weight: lighter;
+     font-size: 16px;
+     margin: 0px 0px 3px 10px;
+ }
+.anim_heart {
+    margin-right: 25px;
+    font-size: 20px;
+    color: #000;
 }
