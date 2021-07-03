@@ -1,14 +1,22 @@
+@font-face {
+    font-family:"RobotoB", sans-serif;
+    src: url(../Fonts/Roboto-Bold.ttf);
+    
+}
+@font-face {
+    font-family:"Roboto";
+    src: url(../Fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family:"Shrikhand", cursive;
+    src: url(../Fonts/Shrikhand-Regular.ttf);
+}
 /* Général*/
 body {
     margin: 0px;
     padding: 0px;
 }
-h1, h2, h3 {
-    font-family: "Shrikhand", sans-serif;
-}
-p {
-    font-family: "Roboto", sans-serif;
-}
+
 /* Header/ Header img*/
 #header {
     width: 100%;
@@ -34,7 +42,7 @@ p {
 }
 #location::placeholder {
     color: black;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     
 }
 /*Partie Header intro*/
@@ -72,6 +80,7 @@ h2 {
     margin-left: 15px;
     font-size: 18px;
     font-weight: lighter;
+    font-family: "Roboto";
 }
 
 .function_text {
@@ -119,6 +128,7 @@ h2 {
 }
 #food_card h2 {
     padding-top: 30px;
+    font-family:"Roboto";
 }
 .card {
     width: 90%;
@@ -147,7 +157,7 @@ a {
     color: #337D6B;
     background-color: #99E2D0;
     font-weight: bold;
-    font-family: "Roboto", sans-serif;
+    font-family:"Roboto";
     position: absolute;
     right: 0;
     margin-top: 10px;
@@ -164,6 +174,7 @@ h3 {
     font-weight: lighter;
     font-size: 16px;
     margin: 5px 0px 0px 10px;
+    font-family:"Shrikhand";
 }
 h4 {
     color: #000;
@@ -203,6 +214,5 @@ footer a {
 footer li {
     list-style: none;
     padding-bottom: 5px;
-    font-family: "Roboto", sans-serif;
-    
+    font-family:"Roboto";
 }
