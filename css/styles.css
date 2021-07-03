@@ -1,5 +1,5 @@
 @font-face {
-    font-family:"RobotoB", sans-serif;
+    font-family:"RobotoB";
     src: url(../Fonts/Roboto-Bold.ttf);
     
 }
@@ -8,8 +8,11 @@
     src: url(../Fonts/Roboto-Regular.ttf);
 }
 @font-face {
-    font-family:"Shrikhand", cursive;
+    font-family:"Shrikhand";
     src: url(../Fonts/Shrikhand-Regular.ttf);
+}
+p {
+    font-family: "Roboto";
 }
 /* Général*/
 body {
@@ -42,7 +45,7 @@ body {
 }
 #location::placeholder {
     color: black;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     
 }
 /*Partie Header intro*/
@@ -56,6 +59,7 @@ body {
     text-align: center;
     font-weight: lighter;
     font-size: 20px;
+    font-family: "RobotoB", sans-serif;
 }
 .intro_info {
     margin: 0px 20px 30px;
@@ -72,6 +76,12 @@ body {
     font-size: 16px;
     color: #fff;
 }
+/*Survol bouton*/
+.intro_btn:hover {
+    box-shadow: 5px 5px 10px #575757;
+    cursor: pointer;
+    
+}
 /*Partie Fonctionnement*/
 main {
     width: 100%;
@@ -80,7 +90,7 @@ h2 {
     margin-left: 15px;
     font-size: 18px;
     font-weight: lighter;
-    font-family: "Roboto";
+    font-family: "RobotoB", sans-serif;
 }
 
 .function_text {
@@ -117,9 +127,14 @@ h2 {
 /*Survol bouton partie fonctionnement*/
 .function_btn:hover {
     background-color: #F2EAFB;
+    box-shadow: 5px 5px 10px #9A9C9C;
+    cursor: pointer;
+    
 }
 .function_btn i:hover {
    color:#9356DC;
+   
+   
 }
 /*Partie restaurant*/
 #food_card {
@@ -128,7 +143,7 @@ h2 {
 }
 #food_card h2 {
     padding-top: 30px;
-    font-family:"Roboto";
+    font-family:"RobotoB", sans-serif;
 }
 .card {
     width: 90%;
@@ -157,7 +172,7 @@ a {
     color: #337D6B;
     background-color: #99E2D0;
     font-weight: bold;
-    font-family:"Roboto";
+    font-family:"Roboto", sans-sérif;
     position: absolute;
     right: 0;
     margin-top: 10px;
@@ -171,10 +186,10 @@ a {
 }
 h3 {
    color: #000;
-    font-weight: lighter;
+    font-weight: 100;
     font-size: 16px;
     margin: 5px 0px 0px 10px;
-    font-family:"Shrikhand";
+    font-family:"Shrikhand", cursive;
 }
 h4 {
     color: #000;
