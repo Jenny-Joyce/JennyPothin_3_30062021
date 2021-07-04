@@ -1,0 +1,55 @@
+/*Polices*/
+@font-face {
+    font-family:"RobotoB";
+    src: url(../Fonts/Roboto-Bold.ttf);
+    
+}
+@font-face {
+    font-family:"Roboto";
+    src: url(../Fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family:"Shrikhand";
+    src: url(../Fonts/Shrikhand-Regular.ttf);
+}
+/*Général*/
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/*Partie Header*/
+header {
+    margin-top: 20px; 
+}
+.logo {
+    display: flex;
+    align-items: center;
+
+}
+.logo img {
+    width: 50%;
+    margin-left: 30px;
+}
+.link {
+    color: black;
+    font-size:20px;
+    margin: 0px 20px;
+}
+.background img {
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+}
+/*Partie Titre de la section Menu*/
+.menu {
+    background-color: #f2f2f2;
+    border-radius: 50px 50px 0px 0px;
+    
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
