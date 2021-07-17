@@ -24,8 +24,9 @@ header {
 }
 .logo {
     display: flex;
-    align-items: center;
 
+    
+    align-items: center;
 }
 .logo img {
     width: 50%;
@@ -184,7 +185,7 @@ header {
 .main_infos:hover .checked, 
 .desserts_infos:hover .checked {
     animation: rotate 0.5s ease-in-out;
-  } 
+} 
 
 
 /*Bouton commander*/
@@ -197,9 +198,8 @@ header {
     width:150px;
     border: none;
     background:linear-gradient(to bottom right, #FF79DA, #9356DC);
-    margin-left: 100px;
+    margin-left: 120px;
     margin-top: 15px;
-    
 }
 .btn:hover {
     box-shadow: 4px 4px 8px black;
