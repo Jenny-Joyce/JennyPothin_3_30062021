@@ -191,12 +191,9 @@ h2 {
     background-color: #F2EAFB;
     box-shadow: 5px 5px 10px #9A9C9C;
     cursor: pointer;
-    
 }
 .function_btn i:hover {
    color:#9356DC;
-   
-   
 }
 /*Partie restaurant*/
 #food_card {
@@ -260,8 +257,24 @@ h4 {
      font-size: 16px;
      margin: 0px 0px 3px 10px;
  }
-.anim_heart {
-    margin-right: 25px;
-    font-size: 20px;
-    color: #000;
+
+/*Animation coeur*/
+.anim {
+    margin-right: 5px;
+    margin-top: 0px;
+    position: absolute;
+    background: linear-gradient(#9356dc, #ff79da); 
+    background-clip: text;
+  -webkit-background-clip:text;
+  color: transparent;
+    transform: scale(0);
+}
+.icons:hover .anim {
+    transform-origin: bottom;
+    transform: scale(1);
+    transition: transform 1000ms;
+}
+.heart {
+    margin-right: 5px;
+    position: relative;
 }
