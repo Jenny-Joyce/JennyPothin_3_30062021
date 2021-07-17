@@ -27,4 +27,12 @@ footer li {
     padding-bottom: 5px;
     font-family:"Roboto";
 }
-
+@media screen and (min-width:1025px) {
+    footer img {
+        width: 20%;
+    }
+    footer a {
+        font-size: 24px;
+    }
+    
+}
