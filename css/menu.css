@@ -93,6 +93,7 @@ header {
 }
 .starter_infos, .main_infos, .desserts_infos {
     width: 95%;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,6 +102,7 @@ header {
     border-radius: 20px;
     box-shadow: 3px 3px 10px #f2f2f2;
     font-family: "Roboto", sans-serif;
+    overflow: hidden;
 }
 .infos {
     margin-left: 10px;
@@ -110,25 +112,97 @@ header {
     margin-bottom: 0px;
     font-size: 15px;
 }
+
 .infos p {
     margin-top: 5px;
     font-size: 12px;
 }
+.starter_infos:hover p, 
+.main_infos:hover p,
+.desserts_infos:hover p {
+    width: 80%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/*Animation slide prix vers la gauche*/
+@keyframes slidePrice {
+    to {
+        transform: translateX(-10px);
+    }
+}
 .price {
-    transform: translate(-5px, 15px);
+    margin-top: 25px;
     margin-right: 10px;
     font-size: 14px;
     font-weight: 700;
+}
+.starter_infos:hover .price,
+.main_infos:hover .price,
+.desserts_infos:hover .price {
+    animation: slidePrice 1s both;
+}
+
+.check {
+    display:none;
+    background: #99E2D0;
+    color: white;
+    width: 15%;
+    border-radius: 0px 20px 20px 0px;
+}
+/*Animation slide vers la gauche*/ 
+@keyframes slide {
+    0%{
+       opacity: 0;
+       transform:translateX(30px);
+   }
+    100%{
+       opacity:1;
+       transform:translateX(0px);
+   }
+} 
+.starter_infos:hover .check, 
+.main_infos:hover .check, 
+.desserts_infos:hover .check {
+    display: block;
+    animation: slide 1s both;
+}
+
+.checked {
+    display: flex; 
+    justify-content: center; 
+    margin: 20px;
+    font-size: 20px;
+}
+  /*Animation rotation icône*/  
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.starter_infos:hover .checked, 
+.main_infos:hover .checked, 
+.desserts_infos:hover .checked {
+    animation: rotate 0.5s ease-in-out;
+  } 
+
+
+/*Bouton commander*/
+.btn {
+    padding:10px;
+    border-radius:20px;
+    color:#fff;
+    font-family:"RobotoB", sans-serif;
+    font-size: 15px;
+    width:150px;
+    border: none;
+    background:linear-gradient(to bottom right, #FF79DA, #9356DC);
+    margin-left: 100px;
+    margin-top: 15px;
     
 }
-.btn {
-    padding: 10px;
-    border-radius: 20px;
-    color: #fff;
-    font-family: "RobotoB", sans-serif;
-    font-size: 15px;
-    width: 150px;
-    border: none;
-    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-    transform: translate(50%, 10px);
+.btn:hover {
+    box-shadow: 4px 4px 8px black;
+   cursor: pointer;
+   opacity: 0.7;
 }
