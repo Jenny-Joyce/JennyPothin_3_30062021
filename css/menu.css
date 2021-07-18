@@ -24,8 +24,6 @@ header {
 }
 .logo {
     display: flex;
-
-    
     align-items: center;
 }
 .logo img {
@@ -76,6 +74,10 @@ header {
 }
 .heart {
     position: relative;
+    color: #000;
+}
+.icons:hover .heart {
+    color: transparent;
 }
 
 /*Partie entrées*/
@@ -190,6 +192,8 @@ header {
 
 /*Bouton commander*/
 .btn {
+    display: block;
+    margin: auto;
     padding:10px;
     border-radius:20px;
     color:#fff;
@@ -198,8 +202,7 @@ header {
     width:150px;
     border: none;
     background:linear-gradient(to bottom right, #FF79DA, #9356DC);
-    margin-left: 120px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .btn:hover {
     box-shadow: 4px 4px 8px black;
