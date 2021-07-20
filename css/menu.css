@@ -158,8 +158,14 @@ header {
 }
 
 .infos p {
+    width: 300px;
     margin-top: 5px;
     font-size: 12px;
+    background-color: #ff79da;
+}
+.infos:hover p {
+    width: 300px;
+    
 }
 .starter_infos:hover p, 
 .main_infos:hover p,
@@ -167,49 +173,37 @@ header {
     width: 80%;
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
-/*Animation slide prix vers la gauche*/
-@keyframes slidePrice {
-    to {
-        transform: translateX(-10px);
-    }
-}
+
 .price {
     margin-top: 25px;
-    margin-right: 10px;
+   
     font-size: 14px;
     font-weight: 700;
 }
-.starter_infos:hover .price,
+/* .starter_infos:hover .price,
 .main_infos:hover .price,
 .desserts_infos:hover .price {
-    animation: slidePrice 1s both;
-}
+    margin-right: 0px;
+    
+} */
 
 .check {
-    display:none;
-    background: #99E2D0;
+background: #99E2D0;
     color: white;
     width: 15%;
     border-radius: 0px 20px 20px 0px;
+    /* margin-right: -50px; */
+    transition: margin-right 0.5s;
 }
-/*Animation slide vers la gauche*/ 
-@keyframes slide {
-    0%{
-       opacity: 0;
-       transform:translateX(30px);
-   }
-    100%{
-       opacity:1;
-       transform:translateX(0px);
-   }
-} 
+
 .starter_infos:hover .check, 
 .main_infos:hover .check, 
 .desserts_infos:hover .check {
-    display: block;
-    animation: slide 1s both;
+    /* display: block; */
+    margin-right: 0px;
+    
 }
 
 .checked {
@@ -227,7 +221,7 @@ header {
 .starter_infos:hover .checked, 
 .main_infos:hover .checked, 
 .desserts_infos:hover .checked {
-    animation: rotate 0.5s ease-in-out;
+    animation: rotate 0.8s;
 } 
 
 
@@ -259,6 +253,22 @@ header {
     .link {
         font-size: 40px;
     }
+    .icons {
+        font-size: 25px;
+    }
+    .menu {
+        width: 80%;
+        margin:-60px auto 0px;
+    }
+    .starter, .main_courses, .desserts {
+        width: 70%;
+        margin-left: 30px;
+        position: relative;
+    }
+    .check {
+        margin-right: -60px;
+    }
+   
 }
 @media screen and (min-width:1024px) {
     /*header*/
