@@ -14,6 +14,27 @@
 p {
     font-family: "Roboto";
 }
+
+/*Animation disparition loading spinner*/
+@keyframes disappear {
+    0%,
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+} /*Animation effet rebondi */
+@keyframes bounce {
+    to {
+      transform: translate3d(0, -50px, 0);
+    }
+}
+
 /* Général*/
 body {
     margin: 0px;
@@ -21,16 +42,16 @@ body {
 }
 /*Animation Chargement*/
 .loading {
-    display: none;
+    display: flex;
     justify-content: center;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    /* position: fixed;  */
+    position: fixed;
     z-index: 2;
     background: #f2f2f2;
-    animation: disappear 3s ease-in-out forwards;
+    animation: disappear 3s forwards;
 }
 .letter {
     font-size: 35px;
@@ -66,23 +87,7 @@ body {
 .letter:nth-child(8) {
     animation-delay: 0.8s;
 }
-@keyframes disappear {
-    0%,
-    25%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes bounce {
-    to {
-      transform: translate3d(0, -50px, 0);
-    }
-  }
+
 /* Header/ Header img*/
 #header {
     width: 100%;
@@ -198,6 +203,7 @@ h2 {
 .function_btn i:hover {
    color:#9356DC;
 }
+
 /*Partie restaurant*/
  #food_card {
     background-color: #f2f2f2;
