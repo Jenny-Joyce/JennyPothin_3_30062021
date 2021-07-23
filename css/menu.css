@@ -153,6 +153,9 @@ header {
 .starter_infos:nth-child(4){
     animation-delay: 0.6s;
 }
+.starter_infos:nth-child(5) {
+    animation-delay: 0.7s;
+}
 
 .main_infos:nth-child(2){
     animation-delay: 0.8s;
@@ -279,6 +282,10 @@ header {
     .link {
         font-size: 40px;
     }
+    .background img {
+        height: 50vh;
+        object-fit: cover;
+    }
     /*Icônes coeur*/
     .icons {
         font-size: 25px;
@@ -291,7 +298,7 @@ header {
     .starter, .main_courses, .desserts {
         width: 70%;
         margin:auto;
-        position: relative;
+        
     }
     .infos p {
         width: 280px;
@@ -315,12 +322,21 @@ header {
         display: block;
         margin: auto;
         width: 45%;
+
+    }
+    .background img {
+        height: 40vh;
+        object-fit: cover;
     }
     /*Icône coeur*/
     .icons {
         font-size: 30px;
     }
     /*Partie menu*/
+    .menu {
+        width: 95%;
+        margin: -40px auto 0px;
+    }
     .menu_infos {
         display: flex;
         
@@ -351,11 +367,13 @@ header {
         width: 80%;
         margin:-60px auto 0px;
     }
-    
+    .starter, .main_courses, .desserts {
+        width: 40%;
+    }
     .starter_infos:hover p,
     .main_infos:hover p,
     .desserts_infos:hover p{
-    width: 300px;
+    width: 100px;
     }
     .check {
         margin-right: -5vw;
