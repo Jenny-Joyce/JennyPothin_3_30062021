@@ -64,6 +64,8 @@ header {
 /*Image en dessous du logo*/
 .background img {
     width: 100%;
+    height: 30vh;
+    object-fit: cover;
     margin-top: 10px;
 }
 
