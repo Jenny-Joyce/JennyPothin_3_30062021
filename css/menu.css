@@ -90,6 +90,7 @@ header {
     margin-top: 2px;
     position: absolute;
     background: linear-gradient(#9356dc, #ff79da); 
+    background-clip: text;
   -webkit-background-clip:text;
   color: transparent;
     transform: scale(0);
