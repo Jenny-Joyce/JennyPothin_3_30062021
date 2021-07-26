@@ -196,12 +196,12 @@ header {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    
 }
+
 .starter_infos:hover h3, 
 .main_infos:hover h3,
 .desserts_infos:hover h3 {
-    width: 200px;
+    width: 230px;
 }
 
 .infos p {
@@ -229,8 +229,6 @@ header {
 .check {
     background: #99E2D0;
     color: white;
-    width: 15%;
-    border-radius: 0px 20px 20px 0px;
     margin-right: -20vw;
     transition: margin-right 0.5s;
 }
@@ -244,7 +242,7 @@ header {
 .checked {
     display: flex; 
     justify-content: center; 
-    margin: 20px;
+    margin: 20px 12px;
     font-size: 20px;
 }
 
@@ -303,12 +301,12 @@ header {
         
     }
     .infos p {
-        width: 280px;
+        width:280px;
     }
     .starter_infos:hover p,
     .main_infos:hover p,
     .desserts_infos:hover p {
-        width: 250px;
+        width: 260px;
     }
     .check {
         margin-right: -10vw;
@@ -370,12 +368,13 @@ header {
         margin:-60px auto 0px;
     }
     .starter, .main_courses, .desserts {
-        width: 40%;
+        width: 30%;
+        margin: auto;
     }
     .starter_infos:hover p,
     .main_infos:hover p,
     .desserts_infos:hover p{
-    width: 100px;
+    width: 200px;
     }
     .check {
         margin-right: -5vw;
