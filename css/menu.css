@@ -202,19 +202,21 @@ header {
 .starter_infos:hover h3, 
 .main_infos:hover h3,
 .desserts_infos:hover h3 {
-    width: 230px;
+    width: 200px;
+    
 }
 
 .infos p {
     width: 230px;
     margin-top: 5px;
     font-size: 12px;
+    
 }
 
 .starter_infos:hover p, 
 .main_infos:hover p,
 .desserts_infos:hover p{
-    width: 200px;
+    width: 180px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
