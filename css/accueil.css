@@ -58,7 +58,6 @@ body {
 .letter {
     font-size: 35px;
     background: linear-gradient( #9356DC 25%, #FF79DA 50%, #99E2D0 75%);
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     margin: auto;
@@ -283,7 +282,6 @@ h4 {
     margin-top: 0px;
     position: absolute;
     background: linear-gradient(#9356dc, #ff79da); 
-    background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     transform: scale(0);
