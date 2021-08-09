@@ -64,7 +64,7 @@ header {
 /*Image en dessous du logo*/
 .background img {
     width: 100%;
-    height: 30vh;
+    height: 30%;
     object-fit: cover;
     margin-top: 10px;
 }
@@ -102,7 +102,7 @@ header {
 .icons:hover .anim {
     transform-origin: bottom;
     transform: scale(1);
-    transition: transform 1000ms;
+    transition: transform 1s;
 }
 
 .heart {
@@ -142,7 +142,7 @@ header {
     box-shadow: 3px 3px 10px #f2f2f2;
     font-family: "Roboto", sans-serif;
     overflow: hidden;
-    animation: appearance 2s ease both;
+    animation: appearance 2s linear both;
 }
 
 .starter_infos:nth-child(2){
@@ -199,8 +199,6 @@ header {
     overflow: hidden;
 }
 
-
-
 .starter_infos:hover h3, 
 .main_infos:hover h3,
 .desserts_infos:hover h3 {
@@ -234,14 +232,14 @@ header {
 .check {
     background: #99E2D0;
     color: white;
-    margin-right: -20vw;
+    margin-right: -20%;
     transition: margin-right 0.5s;
 }
 
 .starter_infos:hover .check, 
 .main_infos:hover .check, 
 .desserts_infos:hover .check {
-    margin-right: 0vw;
+    margin-right: 0%;
 }
 
 .checked {
@@ -373,15 +371,27 @@ header {
         margin:-60px auto 0px;
     }
     .starter, .main_courses, .desserts {
-        width: 30%;
+        width: 25%;
         margin: auto;
+    }
+    .starter {
+        margin-top: 30px;
+    }
+    
+    .starter_infos:hover h3, 
+    .main_infos:hover h3,
+    .desserts_infos:hover h3 {
+        width: 250px;
+    
     }
     .starter_infos:hover p,
     .main_infos:hover p,
     .desserts_infos:hover p{
-    width: 200px;
+        width: 250px;
+    
     }
     .check {
         margin-right: -5vw;
     }
+    
 }
